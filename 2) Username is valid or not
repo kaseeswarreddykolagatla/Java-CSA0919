@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class checkusername{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+
+        System.out.print("enter the username:");
+        String s1=scanner.nextLine().trim();
+
+        System.out.print("enter the username to check:");
+        String s2=scanner.nextLine().trim();
+
+        if(s1.equalsIgnoreCase(s2)){
+            System.out.println("valid");
+        }else{
+            System.out.println("invalid");
+        }
+        scanner.close();
+    }
+}
