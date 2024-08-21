@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class checkage{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        System.out.print("enter the age:");
+        int age=scanner.nextInt();
+        
+        if(age>=18){
+            System.out.println("you are eligible to vote.");
+        }else{
+            System.out.println("you are not eligible to vote. "   +(18-age)+ " years left.");
+        }
+        scanner.close();
+    }
+}
