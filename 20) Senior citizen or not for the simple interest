@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class simpleinterest{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        System.out.print("enter the principal amount:");
+        float p=scanner.nextFloat();
+        System.out.print("enter the time:");
+        float t=scanner.nextFloat();
+        System.out.print("is the customer is senior citizen? (true/false):");
+        boolean isseniorcitizen=scanner.nextBoolean();
+        float r;
+        if(isseniorcitizen){
+            r=12;
+        }else{
+            r=10;
+        }
+        float si=(p*t*r)/100;
+        System.out.println("simple interest is:"+si);
+        scanner.close();
+        
+    }
+}
