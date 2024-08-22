@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class checkequalnumberornot{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int a,b;
+        System.out.print("enter the number1:");
+        a=scanner.nextInt();
+        System.out.print("enter the number2:");
+        b=scanner.nextInt();
+        if(a==b){
+            System.out.print("both are equal");
+        }else{
+            System.out.print("not equal");
+        }
+    }
+}
