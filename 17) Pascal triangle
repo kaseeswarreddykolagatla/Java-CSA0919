@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class pascaltriangle{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        System.out.print("enter the number of rows:");
+        int n=scanner.nextInt();
+        int i,j;
+        for(i=0;i<n;i++){
+            System.out.print(" ".repeat(n-i));
+               int num=1;
+            for(j=0;j<=i;j++){
+                System.out.print(num+" ");
+                num=num*(i-j)/(j+1);
+            }
+            System.out.println();
+        }
+    }
+}
