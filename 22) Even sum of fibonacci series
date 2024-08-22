@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class evensumoffibonacciseries{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int n,t1=0,t2=1,nextTerm,sum=0;
+        System.out.print("enter the number of terms:");
+        n=scanner.nextInt();
+        System.out.print("fibonacci series is:");
+        while(t1<n){
+            System.out.print(t1+" ");
+            if(t1%2==0){
+                sum=sum+t1;
+            }
+        nextTerm=t1+t2;
+        t1=t2;
+        t2=nextTerm;
+        }
+        System.out.println();
+        System.out.println("even sum of fibonacci series is:"+sum);
+        scanner.close();
+        
+    }
+}
