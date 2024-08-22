@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class cuberoot{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int n,result;
+        System.out.print("enter the number:");
+        n=scanner.nextInt();
+        if(n>0){
+            result=(int)Math.cbrt(n);
+            System.out.print("cube root is:"+result);
+        }else{
+            System.out.print(" not having real value");
+        }
+    }
+}
