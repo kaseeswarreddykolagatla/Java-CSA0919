@@ -1,0 +1,10 @@
+import java.util.*;
+public class sortnames{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+            String[] names={"apple","banana","carrot","df","egg","figg","ginger"};
+            Arrays.sort(names,scanner.next().equalsIgnoreCase("D")?Collections.reverseOrder():null);
+            for(String name:names)System.out.println(name);
+            
+    }
+}
