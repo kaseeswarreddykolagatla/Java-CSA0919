@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class sandglasspattern{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int i,max;
+        System.out.println("enter the number to be printed:");
+        String n=scanner.next();
+        System.out.println("enter the max number of times printed:");
+        max=scanner.nextInt();
+        for(i=1;i<=max;i++)
+            System.out.println(n.repeat(i));
+        
+            for(i=max-1;i>=0;i--)
+                System.out.println(n.repeat(i));
+            
+        
+    }
+}
