@@ -1,0 +1,9 @@
+import java.util.Scanner;
+public class specialcharacters{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        String input=scanner.nextLine();
+        String specialChars=input.replaceAll("[\\w\\s]","");
+        System.out.println(specialChars+"\n"+specialChars.length());
+    }
+}
