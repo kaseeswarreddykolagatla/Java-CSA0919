@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class R192211399{
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        int n,i=1;
+        System.out.print("enter the number:");
+        n=scanner.nextInt();
+        boolean isperfectcube=false;
+        while(n>=i*i*i){
+            if(i*i*i==n){
+                isperfectcube=true;
+                break;
+            }
+            i++;
+        }if(isperfectcube){
+            System.out.print("cube root of give:"+i);
+        }else{
+            System.out.print("errror");
+        }
+    }
+}
